@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<table>
+		<tr>
+			<th>Name</th>
+			<th><Age</th>
+			<th>Major</th>
+		</tr>
+		{% for person in people %}
+		<tr>
+			<td> {{person["name"]}} </td>
+			<td> {{person["age"]}} </td>
+			<td> {{person["major"]}} </td>
+		</tr>
+		{% endfor %}
+	</table>
+{% endblock %}
