@@ -11,6 +11,6 @@ def index():
 @program.route('/people')
 def people():
     people = [ { "name" : "hayden", "age" : "21", "major" : "Computer Science" } ]
-    for person in people:
-        print(person["name"])
+    people.append({ "name" : "john", "age" : "45", "major" : "Physics" } )
+    people.append({ "name" : "jake", "age" : "23", "major" : "Psychology" } )
     return render_template('people.html', people = people)
